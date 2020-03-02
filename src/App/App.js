@@ -1,15 +1,18 @@
 import React, { Component } from 'react';
 
+import HeroForm from './components/HeroForm/HeroForm';
+import './App.scss';
+
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-export class App extends Component {
+class App extends Component {
   render() {
     return (
-      <div>
-        <button className='btn btn-danger'>HELP ME</button>
+      <div className="App">
+        <h1>Heroes and Villains</h1>
+        <HeroForm/>
       </div>
     );
   }
 }
-
 export default App;
